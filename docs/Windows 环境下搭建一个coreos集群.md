@@ -102,16 +102,18 @@
                     - name: fleet.service
                       command: start
 
-        编辑完毕后，请到[http://codebeautify.org/yaml-validator][]校验下yaml文件格式是否正确。
-     4. 将Vagrantfile文件中的“config.vm.box_version = ">= 308.0.1"”注释掉
+        编辑完毕后，请到 [http://codebeautify.org/yaml-validator][] 校验下yaml文件格式是否正确。
+
+    4. 将Vagrantfile文件中的“config.vm.box_version = ">= 308.0.1"”注释掉
+
 4. 下载[box文件][]（本来不下载也可以的，但国内因为各种原因速度较慢，所以推荐用户使用浏览器等工具下载该文件），将其放在coreos-vagrant目录下，并执行
 
-        vagrant box add coreos-stable coreos_production_vagrant.box
+    `vagrant box add coreos-stable coreos_production_vagrant.box`
    
 
 ### 安装
 
-进入coreos-vagrant目录，在git bash下执行`vagrant up`即可。
+进入 coreos-vagrant 目录，在 git bash 下执行 `vagrant up` 即可。
 
 ## 小结
 
